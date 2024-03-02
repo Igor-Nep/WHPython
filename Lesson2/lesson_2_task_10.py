@@ -4,7 +4,7 @@ def bank(summ, time):
 	return round(summ, 2)	 
 	
 
-summ=input('Введите вносимую сумму: ')
-time=input('Введите количество лет для вклада: ')
-itog=str(bank(summ,time))
+summ = input('Введите вносимую сумму: ')
+time = input('Введите количество лет для вклада: ')
+itog = str(bank(summ,time))
 print(f'Ваш итог по вкладу составит {itog} руб.')

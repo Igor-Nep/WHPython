@@ -4,7 +4,7 @@ def month_to_season(n):
 		return 'Зима'
 	elif m == 3 or m == 4 or m == 5:
 		return 'Весна'
-	elif m == 6 or m == 7 or m == 8:
+	elif m in [6, 7, 8]:
 		return 'Осень' 
 	else: 
 		return 'Введите число от 1 до 12'	
