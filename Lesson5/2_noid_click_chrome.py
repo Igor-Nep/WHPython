@@ -13,7 +13,4 @@ driver.get('http://uitestingplayground.com/dynamicid')
 blue_button = driver.find_element(By.CSS_SELECTOR, '.btn')
 #запустить скрипт 3 раза
 for i in range (0, 3):
-    blue_button.send_keys(Keys.RETURN)
-    buttid = driver.find_element(By.CSS_SELECTOR, '.btn[type="button"]').text
-    print(buttid)
-sleep(2)
+    blue_button.click()

@@ -10,5 +10,5 @@ driver = webdriver.Firefox(options=options)
 driver.get('http://uitestingplayground.com/classattr')
 #Кликните на синюю кнопку
 blue_button = driver.find_element(By.CSS_SELECTOR, '.btn.btn-primary')
-blue_button.send_keys(Keys.RETURN)
-sleep(2)
+for i in range(0, 3):
+    blue_button.click()

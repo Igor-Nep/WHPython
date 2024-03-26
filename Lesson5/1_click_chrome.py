@@ -20,5 +20,3 @@ ellist = driver.find_elements(By.CSS_SELECTOR, '.added-manually')
 
 #Выведите на экран размер списка.
 print(f'Размер списка элементов: {len(ellist)}')
-
-sleep(2)

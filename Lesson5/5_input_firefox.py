@@ -10,13 +10,11 @@ driver = webdriver.Firefox(options=options)
 driver.get('http://the-internet.herokuapp.com/inputs')
 
 #Введите в поле текст 1000
-search_input = driver.find_element(By.CSS_SELECTOR, '#content > div > div > div > input[type=number]')
+search_input = driver.find_element(By.CSS_SELECTOR, 'input')
 search_input.send_keys('1000', Keys.RETURN)
-sleep(3)
 
 #Очистите это поле
 search_input.clear()
 
 #Введите в поле текст 999
 search_input.send_keys('999', Keys.RETURN)
-sleep(3)

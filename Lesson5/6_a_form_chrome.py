@@ -21,4 +21,3 @@ password_input.send_keys('SuperSecretPassword!')
 #Нажмите кнопку Login
 login_button = driver.find_element(By.CSS_SELECTOR, '#login > button')
 login_button.click()
-sleep(3)

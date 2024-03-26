@@ -10,6 +10,5 @@ driver = webdriver.Firefox(options=options)
 driver.get('http://the-internet.herokuapp.com/entry_ad')
 sleep(2)
 #Кликните на Close
-close_button = driver.find_element(By.CSS_SELECTOR, '#modal > div.modal > div.modal-footer > p')
+close_button = driver.find_element(By.CSS_SELECTOR, 'div.modal-footer')
 close_button.click()
-sleep(2)
