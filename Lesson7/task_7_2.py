@@ -20,11 +20,12 @@ def test_inform():
     BE.input_company('SkyPro')
     BE.click_submit()
 
-    red = BE.color_red()
-    assert red == 'rgba(248, 215, 218, 1)'
-
     green = BE.color_green()
-    assert green == 'rgba(209, 231, 221, 1)'   
+    red = BE.color_red()
+    assert red == 'rgba(248, 215, 218, 1)' and green == 'rgba(209, 231, 221, 1)'  
+
+    
+    
 
     
 

@@ -7,7 +7,7 @@ from SlowCalc import SlowCalc
 def test_calc():
     driver = webdriver.Chrome(service = ChromeService(ChromeDriverManager().install()))
     SC = SlowCalc(driver)
-    SC.delay(45)
+    SC.delay(15)
     SC.contain()
     result = SC.wait_result()
     assert result == '15'

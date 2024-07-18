@@ -4,9 +4,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 from EShop import EShop
 
-driver = webdriver.Chrome(service = ChromeService(ChromeDriverManager().install()))
-
-
 def test_swaglabs():
     driver = webdriver.Chrome(service = ChromeService(ChromeDriverManager().install()))
     ES = EShop(driver)
