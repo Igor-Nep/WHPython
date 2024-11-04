@@ -20,7 +20,7 @@ def filtered_modules():
 def module_state(thread_number,filtered_modules):
     path_to_script = os.path.dirname(os.path.abspath(__file__))
     my_filename = os.path.join(path_to_script, 'thread'+str(thread_number)+'.txt')
-    # cycle count
+    # cycle count 2 
     for i in range(20):
         with open(my_filename, 'a') as f:
             print('STEP ', str(i), file=f)
